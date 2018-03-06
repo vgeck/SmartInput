@@ -8,9 +8,9 @@ List of modules
 
 import smartinput
 
-from smartinput import SmartInput
+from smartinput.smart_input import SmartInput
 
-__all__ = [ smartinput.__all__]
+__all__ = [smart_input.__all__]
 
 
 if __name__ == "__main__":

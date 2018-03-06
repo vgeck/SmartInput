@@ -4,7 +4,7 @@
 
 __all__ = ["smart_input"]
 
-import sys,StringIO,string,os
+import sys, StringIO, string, os
 import copy
 
 try:
@@ -56,7 +56,7 @@ class SmartInput(object):
         if not os.path.isfile(self.commandHistoryFilePath):
             if '/' in self.commandHistoryFilePath:
                 directories = '/'.join(self.commandHistoryFilePath.split('/')[0:-1])
-                print directories
+                print(directories)
                 if not os.path.isdir(directories):
                     os.makedirs(directories)  
             # create the file
